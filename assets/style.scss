@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --medium: 400;
+    --regular: 500;
+    --bold: 700; 
+    --background_color: #131415;
+    --important_color: #f2cc8f;
+    --default_color: #f4f1de;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--default_color);
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--regular);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER - NAV */
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    nav{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        p{
+            font-size: 32px;
+            color: var(--important_color);
+            span {
+                font-size: 28px;
+                color: var(--important_color);
+            }
+        }
+
+        .menu{
+            
+            .menu_ul{
+                display: flex;
+                gap: 20px;
+            }
+
+        }
+
+    }
+
+}
+
+/* MAIN - HERO SECTION */
+
+.hero_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("./img/hero/nebula.png");
+    box-shadow: 10px 10px 5px 443px rgb(0 0 0 / 38%) inset;
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        p{
+            font-size: 30px;
+        }
+
+        h1{
+            color: var(--important_color);
+            font-size: 42px;
+        }
+
+        .links{
+            display: flex;
+            font-size: 24px;
+            gap: 10px;
+            button{
+                border: none;
+                background-color: var(--default_color);
+                color: var(--background_color);
+                font-weight: var(--regular);
+                border-radius: 16px;
+                padding: 2px 5px;
+            }
+
+        }
+
+    }
+
+}
+
+/* ABOUT ME SECTION */
+
+.aboutme_section{
+    background-color: var(--background_color);
+
+    .aboutme_info{
+        h2{
+            color: var(--important_color);
+        }
+        .info{
+            display: flex;
+            
+        }
+    }
+
+    
+
+}
