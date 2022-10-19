@@ -33,6 +33,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s;
 }
 header nav {
   display: flex;
@@ -52,6 +53,13 @@ header nav .menu .menu_ul {
   display: flex;
   gap: 20px;
 }
+header nav .menu .menu_ul :hover {
+  color: var(--important_color);
+}
+
+.hide_nav {
+  transform: translateY(-79px);
+}
 
 /* MAIN - HERO SECTION */
 .hero_section {
@@ -62,7 +70,7 @@ header nav .menu .menu_ul {
   height: 100vh;
   flex-direction: column;
   background-image: url("./img/hero/nebula.png");
-  box-shadow: 10px 10px 5px 443px rgba(0, 0, 0, 0.38) inset;
+  box-shadow: 10px 10px 5px 473px rgba(0, 0, 0, 0.38) inset;
 }
 .hero_section .hero {
   display: flex;
@@ -83,22 +91,70 @@ header nav .menu .menu_ul {
   font-size: 24px;
   gap: 10px;
 }
+.hero_section .hero .links .btn-links:hover {
+  color: var(--important_color);
+}
 .hero_section .hero .links button {
   border: none;
   background-color: var(--default_color);
   color: var(--background_color);
-  font-weight: var(--regular);
+  font-weight: var(--bold);
   border-radius: 16px;
   padding: 2px 5px;
+  cursor: pointer;
 }
 
 /* ABOUT ME SECTION */
 .aboutme_section {
   background-color: var(--background_color);
+  padding: 80px;
+}
+.aboutme_section .aboutme_info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 100px;
+  box-shadow: -2px 2px 32px 0px rgba(0, 0, 0, 0.83);
 }
 .aboutme_section .aboutme_info h2 {
+  font-size: 40px;
   color: var(--important_color);
 }
 .aboutme_section .aboutme_info .info {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutme_section .aboutme_info .info p {
+  font-size: 20px;
+  margin-right: 100px;
+  text-align: justify;
+}
+.aboutme_section .aboutme_info .info img {
+  width: auto;
+  height: 400px;
+}
+
+/* MY CERTIFICATES */
+.mycertificates_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background_color);
+  color: var(--default_color);
+}
+
+/* MY HABILITES */
+.myhabilities_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background_color);
+  color: var(--default_color);
+}
+
+/* PROJECTS*/
+.projects_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background_color);
+  color: var(--default_color);
 }/*# sourceMappingURL=style.css.map */
